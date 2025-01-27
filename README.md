@@ -113,16 +113,24 @@ This repository is meant to showcase my learning journey and to serve as a refer
 🔗 Links
 
 . Politecnico di Torino : https://www.polito.it/en/education/master-s-degree-programmes/computer-engineering
+
 . Python Official Documentation: https://docs.python.org/3/
 
+---------
 📝 Author
 Fakrul Islam
 
 📧 Email: s339696@studenti.polito.it
+
 📚 Student of Bachelor of Computer Engineering, Politecnico di Torino
+
 🌟 LinkedIn Profile: https://www.linkedin.com/in/fakrul-islam-08/
 
+--------
+
+
 🌟 Acknowledgments: 
+
 Special thanks to my professors Daniel Jahier Pagliari (https://www.polito.it/personale?p=035148) and peers at Politecnico di Torino for their guidance and support throughout the course.
 
 
