@@ -82,9 +82,9 @@ The lab exercises focus on practical problem-solving skills and reinforce the co
           1. Sets
           2. Dictionaries
           3. Table searches
-
 - **Lab 12:**
           *Exam Simulation
+
 All lab exercises are stored in the `LabExercises` folder.
 
 ---
