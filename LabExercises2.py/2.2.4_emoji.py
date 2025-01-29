@@ -1,28 +1,39 @@
-# List of the top 10 emojis with their details
-emoji_data = [
-    (1, "U+1F602", "FACE WITH TEARS OF JOY", "😂"),
-    (2, "U+2764", "HEAVY BLACK HEART", "❤"),
-    (3, "U+1F60D", "SMILING FACE WITH HEART-EYES", "😍"),
-    (4, "U+1F609", "WINKING FACE", "😉"),
-    (5, "U+1F618", "FACE THROWING A KISS", "😘"),
-    (6, "U+1F62D", "LOUDLY CRYING FACE", "😭"),
-    (7, "U+1F621", "POUTING FACE", "😡"),
-    (8, "U+1F609", "WINKING FACE", "😉"),
-    (9, "U+1F614", "PENSIVE FACE", "😔"),
-    (10, "U+1F60E", "SMILING FACE WITH SUNGLASSES", "😎")
-]
+# Exercise 02.2.4
+# Popular emojis
 
-# List of emojis that the user uses most frequently (you can change these emojis)
-user_emojis = ["😂", "❤", "😍"]
+# Let's say that my most popular emoji are the following:
+" 👍 🙂 😲 "
 
-# Print the header for the output table
-print(f"{'Rank':<5}{'Unicode':<12}{'Unicode Name':<25}{'Emoji'}")
-print("-" * 50)   #print '-' 50 times
+# To get the Unicode value you can use the ord() function
+# ord('👍') --> 128077
+# In Unicode tables usually the expressed value is in base 16
+# which can be received through hex()
+# hex(128077) --> '0x1f44d'
+# or directly: hex(ord('👍')) --> '0x1f44d'
 
-# Loop through each emoji that the user uses
-for emoji in user_emojis:
-    # Search through the emoji_data list to find details about the emoji
-    for rank, unicode_num, name, em in emoji_data:
-        if em == emoji:  # If the emoji matches
-            # Print the details in a neatly aligned format
-            print(f"{rank:<5}{unicode_num:<12}{name:<25}{em}")
+emoji1 = '👍'
+rank1 = 4 # from https://home.unicode.org/emoji/emoji-frequency/
+unicode1 = '1F44D' # from https://unicode-table.com/en/1F44D/
+name1 = 'Thumbs Up Sign'
+
+emoji2 = '🙂'
+rank2 = 28 # from https://home.unicode.org/emoji/emoji-frequency/
+unicode2 = '1F642' # from https://unicode-table.com/en/1F642/
+name2 = 'Slightly Smiling Face'
+
+emoji3 = '😲'
+rank3 = 111 # from https://home.unicode.org/emoji/emoji-frequency/
+unicode3 = '1F632' # from https://unicode-table.com/en/1F632/
+name3 = 'Astonished Face'
+
+print(f"{'Emoji':<15}{'Position':<15}{'Number':<15}{'Name':<15}")
+print(f"{emoji1:<14}{rank1:<15}{unicode1:<15}{name1:<15}")
+
+print(f"{emoji2:<14}{rank2:<15}{unicode2:<15}{name2:<15}")
+
+print(f"{emoji3:<14}{rank3:<15}{unicode3:<15}{name3:<15}")
+
+# Note: if you read more in depth the cited article in the text, in the bottom part it referes to this document
+# https://docs.google.com/spreadsheets/d/1Zs13WJYdZL1pNZP0dCIXkWau_tZOjK3mmJz0KNq4I30/edit#gid=196891844
+# which contains in tabular form all the needed informations!
+# Reading until the end is always helpful...
